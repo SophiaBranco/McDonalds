@@ -1,7 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import HomeScreen, { RootStackParamList } from './screen/HomeScreen'
 
+import HomeScreen, { RootStackParamList } from './screen/HomeScreen'
+import MenuScreen from './screen/MenuScreen';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
@@ -12,7 +13,7 @@ export default function App() {
         screenOptions={{ headerShown: false}}>
 
              <Stack.Screen name='Home' component={HomeScreen} />
-
+             <Stack.Screen name='Menu' component={MenuScreen} />
         </Stack.Navigator>
      </NavigationContainer>
     );
