@@ -209,66 +209,133 @@ const styles = StyleSheet.create({
  
     },
     infoCard: {
- 
+        backgroundColor: '#FFFFFF',
+        marginTop: -24,
+        borderTopLeftRadius: 24,
+        borderTopRightRadius: 24,
+        paddingHorizontal: 20,
+        paddingTop: 20,
+        paddingBottom: 16,
+        minHeight: 600,
     },
     infoTopRow: {
- 
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 12,
+
     },
     infoLogo: {
+        width: 48,
+        height: 48,
+        borderRadius: 8,
  
     },
     infoTexts: {
+        flex: 1,
  
     },
     brandName: {
+        fontSize: 18,
+        color: '#000000',
+        fontWeight: '700',
  
     },
     brandSubtitle: {
+        fontSize: 13,
+        color: '#707070',
+        marginTop: 2,
  
     },
     statusRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 12,
  
     },
     statusText: {
+        color: '#2BAA3B',
+        fontSize: 13,
+        fontWeight: '600',
  
     },
     categoriesRow: {
+        flexDirection: 'row',
+        gap: 10,
+        paddingVertical: 18,
+        paddingRight: 12,
  
     },
     categoryPill: {
+        paddingHorizontal: 18,
+        paddingVertical: 9,
+        borderRadius: 22,
+        backgroundColor: '#F2F2F2',
  
     },
     categoryPillActives: {
+        backgroundColor: '#FFC72C',
+
  
     },
     categoryText: {
+        fontSize: 14,
+        fontWeight: '600',
+        color: '#000000',
  
     },
     categoryTextActive: {
+        color: '#000000',
+    
  
     },
     sectionTitle: {
+        fontSize: 18,
+        fontWeight: '700',
+        color: '#000000',
+        marginBottom: 8,
  
     },
     productRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 14,
+        gap: 12,
  
     },
     productRowDivider: {
+        borderTopWidth: 1,
+        borderTopColor: '#EEEEEE',
+
  
     },
     productInfo: {
+        flex: 1,
  
     },
     productName: {
+        fontSize: 15,
+        fontWeight: '700',
+        color: '#000000',
+        marginBottom: 4,
  
     },
     productDescription: {
+        fontSize: 13,
+        color: '#707070',
+        lineHeight: 18,
+        marginBottom: 8,
  
     },
     productPrice: {
+        fontSize: 14,
+        fontWeight: '700',
+        color: '#000000',
  
     },
     producImage: {
+        width: 90,
+        height: 70,
  
     },
 })
