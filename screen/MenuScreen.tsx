@@ -14,7 +14,13 @@ import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import type { RootStackParamList } from "./HomeScreen";
  
 type Props = NativeStackScreenProps<RootStackParamList, 'Menu'>
- 
+type product= {
+    id: string;
+    name: string;
+    description: string;
+    price: string;
+    image: number;
+}
 const combos = [
     {
         id: '1',
@@ -46,6 +52,63 @@ const combos = [
     }
 ];
  
+const lanches: Product[] = [
+    {
+        id: 'lanche-1',
+        name: 'Big-mac',
+        description: 'Quatro hamburgueres (100% carne bovina), alface americana...',
+        price: 'R$39,90',
+        image: require('../images/lanche-big-mac.png'),
+    },
+    {
+        id: 'lanche-2',
+        name: 'Duplo-Quarteirão',
+        description: 'Dois hamburgueres de carne 100% bovina, méquinese, a exclu...',
+        price: 'R$41,50',
+        image: require('../images/lanche-duplo-quarterao.png')
+    },
+    {
+        id: 'lanche-3',
+        name: 'McMelt',
+        description: 'Composto por pão tipo brioche com batata, molho Honey&fire, ...',
+        price: 'R$39,90',
+        image: require('../images/lanche-mcmelt.png'),
+    }
+    {
+        id: 'lanche-4',
+        name: 'McNífico Bacon',
+        description: 'Dois hamburgueres (100% carne bovina), molho lácteo com queijo...',
+        price: 'R$36,90',
+        image: require('../images/lanche-mcnifico-bacon.png')
+    },
+];
+
+    const fritas: Product[] = [
+        {
+            id: 'fritas-1',
+            name:'fritas Grande',
+            description: 'Batatas fritas crocantes e sequinhas. Vem bastante!',
+            price: 'R$10,90',
+            image: require ('../images/fritas-grande.png')
+        },
+        {
+            id: 'fritas-2',
+            name: 'Fritas Média',
+            description: 'Batatas fritas crocantes e sequinhas. Vem bastante',
+            price: 'R$9,90',
+            image: require ('../images/fritas-media.png')
+
+        },
+        {
+            id: 'fritas-3',
+            name: 'Fritas pequena',
+            description: 'Batatas fritas crocantes e sequinhas. Vem bastante',
+            price: 'R$5,90',
+            image: require ('../images/fritas-pequena.png')
+        },
+
+    ]
+
 const categories = ['combos', 'Lancher', 'Fritas', 'Bebidas'];
  
 export default function MenuScreen({ navigation }: Props) {
